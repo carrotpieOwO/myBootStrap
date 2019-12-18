@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!--폰트어썸링크-->
+    <script src="js/all.min.js"></script>
+    <!--구글폰트 링크-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Alatsi|Do+Hyeon|Noto+Sans+KR|Kaushan+Script|Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* CSS 코드 작성 */
+      body {
+        font-family: "Alatsi", sans-serif;
+        /* font-weight: 800; 기본 400 */
+      }
+      h1,
+      h3 {
+        font-family: "Kaushan Script", cursive;
+      }
+      h2,
+      h4,
+      h5 {
+        font-family: "Do Hyeon", "Noto Sans KR", sans-serif;
+        /* font-weight: 800; */
+      }
+
+      #korean{
+        font-family: 'Noto Sans KR', sans-serif;
+
+      }
+      .height {
+        height: 100vh;
+      }
+
+      .height-80 {
+        height: 80vh;
+      }
+      .title-underline {
+        width: 190px;
+        height: 8px;
+        margin: 0 auto;
+      }
+      .about-picture {
+        background: url("https://images.pexels.com/photos/3325917/pexels-photo-3325917.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      
+
+      #cat{
+        height: 200px;
+      }
+      #filler{
+        background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,1)),url(https://images.pexels.com/photos/3271679/pexels-photo-3271679.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,1)) ; */
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="bg-dark">
+      <div class="container">
+        <div class="row height align-items-center">
+          <div class="col">
+            <h1 class="text-danger text-uppercase font-italic">
+              <strong>my first bootstrap</strong><br />
+              <small class="text-light">website</small>
+            </h1>
+            <p class="text-muted lead py-2 w-75">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              vero, quis odio esse porro ab officiis qui nobis temporibus, nam
+              placeat nostrum minima, aliquid velit consequatur quas non? Odio,
+              non!
+            </p>
+            <a
+              href=""
+              class="btn btn-outline-primary btn-lg m-2 text-capitalize"
+              >press here</a
+            >
+            <a
+              href=""
+              class="btn btn-outline-success btn-lg m-2 text-capitalize"
+              >press here</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="skills" class="py-5 bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h1 class="display-4 text-uppercase text-dark mb-0">
+              <strong>skills</strong>
+            </h1>
+            <div class="title-underline bg-danger"></div>
+            <p class="mt-2 text-capitalize text-muted">
+              Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 text-center my-4">
+            <i class="fab fa-node-js fa-5x text-danger"></i>
+            <h3 class="text-uppercase my-3">node.js</h3>
+            <p class="text-muted lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates eum adipisci consequuntur facere blanditiis aspernatur?
+            </p>
+            <a
+              href=""
+              class="btn btn-outline-danger btn-sm text-uppercase w-100"
+              >press here</a
+            >
+          </div>
+          <!--col끝-->
+          <div class="col-md-6 col-lg-3 text-center my-4">
+            <i class="fab fa-html5 fa-5x text-danger"></i>
+            <h3 class="text-uppercase my-3">html</h3>
+            <p class="text-muted lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates eum adipisci consequuntur facere blanditiis aspernatur?
+            </p>
+            <a href="" class="btn btn-outline-danger btn-sm text-uppercase w-75"
+              >press here</a
+            >
+          </div>
+          <div class="col-md-6 col-lg-3 text-center my-4">
+            <i class="fab fa-css3 fa-5x text-danger"></i>
+            <h3 class="text-uppercase my-3">css</h3>
+            <p class="text-muted lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates eum adipisci consequuntur facere blanditiis aspernatur?
+            </p>
+            <a href="" class="btn btn-outline-danger btn-sm text-uppercase w-50"
+              >press here</a
+            >
+          </div>
+          <div class="col-md-6 col-lg-3 text-center my-4">
+            <i class="fab fa-js fa-5x text-danger"></i>
+            <h3 class="text-uppercase my-3">js</h3>
+            <p class="text-muted lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates eum adipisci consequuntur facere blanditiis aspernatur?
+            </p>
+            <a href="" class="btn btn-outline-danger btn-sm text-uppercase w-25"
+              >press here</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" style="background-color: palevioletred">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 about-picture height-80"></div>
+          <div class="col-md-6 about-text height-80 px-5 d-flex align-items-center justify-content-center">
+            <div class="about-text-center">
+              <div class="row">
+                <div class="col text-center">
+                  <h1 class="display-4 text-dark text-uppercase text-center  ">
+                    about
+                  </h1>
+                  <div class="title-underline bg-danger"></div>
+                  <p class="text-muted text-center mb-3">
+                    Lorem ipsum dolor sit amet.
+                  </p>
+                </div>
+              </div>
+              <!--row끝-->
+              <div class="checkbox-item d-flex mb-2">
+                <i
+                  class="fas fa-check fa-3x p-2 mr-3 align-items-center"
+                  style="background-color: palegreen;"
+                ></i>
+                <p class="text-light lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam, vitae.
+                </p>
+              </div>
+              <div class="checkbox-item d-flex mb-2">
+                <i
+                  class="fas fa-check fa-3x p-2 mr-3 align-items-center"
+                  style="background-color: palegreen;"
+                ></i>
+                <p class="text-light lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam, vitae.
+                </p>
+              </div>
+              <div class="checkbox-item d-flex mb-2">
+                <i
+                  class="fas fa-check fa-3x p-2 mr-3 align-items-center"
+                  style="background-color: palegreen;"
+                ></i>
+                <p class="text-light lead">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Magnam, vitae.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="background-color: rosybrown;" class="py-5">
+      <div class="container">
+        <h1 class="display-4 text-dark text-center text-uppercase">
+          projects
+        </h1>
+        <div class="title-underline bg-danger" style="width: 350px;"></div>
+        <div class="row py-3 h-100 align-items-center justify-content-center">
+          <div class=" col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/1405712/pexels-photo-1405712.jpeg?auto=compress&cs=tinysrgb&h=650&w=900"
+              alt=""
+              class="img-fluid rounded"
+            />
+            <!--중요!!! fluid 해야 이미지 크기가 유동적으로 조절됨..-->
+          </div>
+          <div class="col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/975000/pexels-photo-975000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="img-fluid img-thumbnail bg-warning border border-warning"
+            />
+          </div>
+          <div class="col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/1435557/pexels-photo-1435557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="img-fluid rounded-circle"
+            />
+          </div>
+        </div>
+        <div
+          class="row py-3 h-100 align-items-center justify-content-center no-gutters"
+        >
+          <div class="col-12 col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/3277180/pexels-photo-3277180.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="img-fluid"
+            />
+            <!--중요!!! fluid 해야 이미지 크기가 유동적으로 조절됨..-->
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/1234049/pexels-photo-1234049.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              alt=""
+              class="img-fluid "
+            />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 mb-1">
+            <img
+              src="https://images.pexels.com/photos/1233415/pexels-photo-1233415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+          <h1 class="display-3 text-dark text-center text-uppercase">team</h1>
+          <div class="title-underline bg-danger"></div>
+          <p id="korean" class="display-5 text-muted text-center";>팀 멤버들을 소개합니다.</p>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img
+                  src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                  alt=""
+                  class="card-img-top"
+                  id="cat"
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis, cum?
+                  </p>
+                  <a href="" class="btn btn-outline-info text-uppercase"
+                    >press here</a
+                  >
+                </div>
+                <div class="card-footer bg-info d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--카드끝-->
+            <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img
+                  src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  class="card-img-top"
+                  id="cat"
+
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis, cum?
+                  </p>
+                  <a href="" class="btn btn-outline-info text-uppercase"
+                    >press here</a
+                  >
+                </div>
+                <div class="card-footer bg-info d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+            </div>
+            <!--카드끝-->
+            <div class="col-md-6 col-lg-4 my-3">
+              <div class="card">
+                <img
+                  src="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  class="card-img-top"
+                  id="cat"
+
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-capitalize">team member</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perferendis, cum?
+                  </p>
+                  <a href="" class="btn btn-outline-info text-uppercase"
+                    >press here</a
+                  >
+                </div>
+                <div class="card-footer bg-info d-flex justify-content-around">
+                  <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                  <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-md-6 col-lg-4 my-3">
+                  <div class="card">
+                    <img
+                      src="https://images.pexels.com/photos/1331821/cat-eyes-angry-suspicious-1331821.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                      alt=""
+                      class="card-img-top"
+                      id="cat"
+
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-capitalize">team member</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis, cum?
+                      </p>
+                      <a href="" class="btn btn-outline-info text-uppercase"
+                        >press here</a
+                      >
+                    </div>
+                    <div class="card-footer bg-info d-flex justify-content-around">
+                      <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                      <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                      <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                      <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3">
+                    <div class="card">
+                      <img
+                        src="https://images.pexels.com/photos/1510543/pexels-photo-1510543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                        class="card-img-top"
+                        id="cat"
+
+                      />
+                      <div class="card-body">
+                        <h5 class="card-title text-capitalize">team member</h5>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Perferendis, cum?
+                        </p>
+                        <a href="" class="btn btn-outline-info text-uppercase"
+                          >press here</a
+                        >
+                      </div>
+                      <div class="card-footer bg-info d-flex justify-content-around">
+                        <a href=""><i class="fab fa-facebook fa-2x text-dark"></i></a>
+                        <a href=""><i class="fab fa-twitter fa-2x text-dark"></i></a>
+                        <a href=""><i class="fab fa-youtube fa-2x text-dark"></i></a>
+                        <a href=""><i class="fab fa-google fa-2x text-dark"></i></a>
+                      </div>
+                    </div>
+                  </div>
+          </div>
+        </div>
+      </section>
+      <!--캐로셀-->
+      <section id="carousel" class="py-5" style="background-color:darkslategray">
+        <div class="container">
+          <!--타이틀 시작-->
+          <h1 class="display-3 text-dark text-center text-uppercase">carousel</h1>
+          <div class="title-underline bg-danger" style="width: 350px;"></div>
+          <p id="korean" class="display-5 text-muted text-center">carousel을 소개합니다.</p>
+          <!--타이틀 끝-->
+          <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+              <div id="example" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators">
+                  <li class="active" data-target="#example" data-slide-to="0"></li>
+                  <li data-target="#example" data-slide-to="1"></li>
+                  <li data-target="#example" data-slide-to="2"></li>
+                </ul>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.pexels.com/photos/576335/pexels-photo-576335.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="1" class="d-block w-100 img-fluid">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/590051/pexels-photo-590051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="2" class="d-block w-100  img-fluid">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/595457/pexels-photo-595457.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="3" class="d-block w-100  img-fluid">
+                  </div>
+                </div>
+                <a href="#example" class="carousel-control-prev" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a href="#example" class="carousel-control-next" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--필러-->
+      <section id="filler" class="p-5 d-flex align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+              <h1 class="text-danger text-uppercase">my first bootstrap website</h1>
+              <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quod fuga explicabo perspiciatis sint porro, ratione repellendus possimus in, corrupti beatae quia enim, ipsa fugiat. Quasi animi facilis cupiditate excepturi?</p>
+              <a href="" class="btn btn-danger btn-lg m-2 text-capitalize">press here</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="blog" class="p-5" style="background-color: thistle;">
+          <div class="container">
+            <div class="row">
+              <div class="col text-dark text-center">
+                <h1 class="display-3 text-uppercase">blog</h1>
+                <div class="title-underline bg-danger"></div>
+                <p id="korean" class="text-white">나의 blog 입니다</p>
+              </div>
+            </div>
+            <!--타이틀 끝-->
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img
+                  src="https://images.pexels.com/photos/3335535/pexels-photo-3335535.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+                <h2 class="my-3 text-danger">Project 1</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, unde.
+                </p>
+              </div>
+              <div class="col-md-4 text-center mt-3">
+                <img
+                  src="https://images.pexels.com/photos/3317038/pexels-photo-3317038.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+                <h2 class="my-3 text-info">Project 2</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, unde.
+                </p>
+              </div>
+              <div class="col-md-4 text-center mt-5">
+                <img
+                  src="https://images.pexels.com/photos/3309197/pexels-photo-3309197.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+                  alt=""
+                  class="img-fluid img-thumbnail"
+                />
+                <h2 class="my-3 text-success">Project 3</h2>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, unde.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="py-5" style="background-color:cadetblue;">
+          <div class="container">
+            <h1 class="display-3 text-uppercase text-dark text-center">contact</h1>
+            <div class="title-underline bg-danger" style="width: 300px;"></div>
+            <p id="korean" class="text-muted text-center">오시는길</p>
+            <div class="row">
+              <div class="col-md-6 my-3">
+                <div class="card card-body" style="background-color:khaki;">
+                  <!--카드 타이틀-->
+                  <div class="card-title text-center text-dark">
+                    <h2 class="text-capitalize">처음 오셨나요?</h2>
+                    <p id="korean">로그인 해주세요.</p>
+                  </div>
+                  <!--카드 타이틀 끝 input폼 시작-->
+                  <form action="">
+                    <div class="form-group mt-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-lg"
+                        id="name"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        type="email"
+                        class="form-control form-control-md"
+                        id="email"
+                        placeholder="email"
+                      />
+                    </div>
+                    <div class="form-group mt-3">
+                      <input
+                        type="text"
+                        class="form-control form-control-md"
+                        id="phone"
+                        placeholder="phone"
+                      />
+                    </div>
+                    <div class="input-group my-3">
+                      <div class="input-group-prepand">
+                        <span id="korean" class="input-group-text">아이디</span>
+                      </div>
+                      <input type="text" class="form-control" id="group-username" />
+                    </div>
+                    <div class="input-group my-3">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"
+                          ><i class="fas fa-user"></i
+                        ></span>
+                      </div>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="group-username-1"
+                        placeholder="이름"
+                      />
+                      <div class="input-group-append">
+                        <button id="korean" type="button" class="btn btn-info">
+                          로그인
+                        </button>
+                      </div>
+                    </div>
+                    <button type="button" class="btn btn-outline-dark btn-block" id="korean">
+                      가입하기
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <!--로그인폼 끝 구글맵 시작-->
+              <div class="col-md-6 my-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.7582502525747!2d127.00924295107103!3d37.537195633466105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3a4c23b83eb%3A0xa27a76b786341663!2z65SU666k7KeA7JeE!5e0!3m2!1sko!2skr!4v1576128698433!5m2!1sko!2skr"
+                    width="600"
+                    height="450"
+                    frameborder="0"
+                    style="border:0;"
+                    allowfullscreen=""
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--리뷰섹션-->
+        <section
+          id="review" class="py-5" style="background-color:rosybrown;"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <h1 class="display-4 text-uppercase text-dark mb-0">
+                  <strong>review</strong>
+                </h1>
+                <div class="title-underline bg-danger"></div>
+                <p id="korean" class="mt-2 text-white lead">수고하셨습니다.</p>
+              </div>
+            </div>
+              <div class="row">
+                <div class="col-md-6 my-4 d-none d-md-block">
+                  <img src="https://images.pexels.com/photos/3329001/pexels-photo-3329001.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6 my-4">
+                  <blockquote class="blockquote text-right">
+                    <p>
+                      <i class="fas fa-quote-left fa-2x mr-3"></i>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, provident.
+                    </p>
+                    <footer class="blockquote-footer text-left ml-5">master coder</footer>
+                  </blockquote>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+    
+        </section>
+    <!-- jQuery , bundle.js -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      // 자바스크립트 코드 작성
+      $(".carousel").carousel({
+        interval:2000,
+        wrap:true
+      });
+    </script>
+  </body>
+</html>
